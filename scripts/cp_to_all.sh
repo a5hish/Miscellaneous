@@ -15,7 +15,7 @@ sudo dpkg-query -l openssh-server 1>/dev/null || sudo apt install openssh-server
 sudo dpkg-query -l net-tools 1>/dev/null || sudo apt install net-tools -y
 sudo dpkg-query -l sshpass 1>/dev/null || sudo apt install sshpass
 
-# if no argument (path_to_file/folder) specificed exit.
+# if no argument (path_to_file/folder) specificed then exit.
 [ -z $1 ] && exit
 
 # Specify the ip addr range of the connected computer in the for loop.
